@@ -1,7 +1,7 @@
 [project]
 name = "backend"
 version = "0.1.0"
-description = "Add your description here"
+description = "AI-powered career platform for job discovery, resume optimization, interview preparation, and application tracking."
 readme = "README.md"
 requires-python = ">=3.13,<3.15"
 dependencies = [
@@ -20,3 +20,14 @@ dev = [
     "pytest>=9.1.1",
     "ruff>=0.15.21",
 ]
+
+[tool.ruff]
+line-length = 88
+target-version = "py313"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.pyright]
+pythonVersion = "3.13"
+typeCheckingMode = "basic"
